@@ -1,17 +1,23 @@
 
      <div class="main">
-      <h1 id="welcome">Welcome to the Renewable Energy Chart Observer <i>ECOB</i></h1>
+      <h1 id="welcome">Welcome to the Renewable Energy Chart Observer <i>RECO</i></h1>
       <hr>
-      <h2 >Our Goal</h2>
-      <p>With these Charts, we intend to inform people living in Germany of the amount of Renewable Energy that is being produced in Germany, as a percentage of the total amount of energy produced
-        <br>You can either view the Forecast of the energy produced today, or view the daily proportion for the last 10 years
-      </p>
 
-      <div>
-        <input type="radio" checked="true" #presentDay value="0" name="period" (change)="display = 0">
-        <label for="presentDay">Forecast</label>
-        <input type="radio" id="past" value="0" name="period" (change)="display = 1">
-        <label for="presentDay">Past</label>
+      <section class="goal-section">
+        <h2>Our Goal</h2>
+        <p>
+          With these Charts, we intend to inform people living in Germany of the amount of Renewable Energy that is being produced in Germany, as a percentage of the total amount of energy produced.
+          <br>
+          You can either view the Forecast of the energy produced today, or view the daily proportion for the last 10 years.
+        </p>
+      </section>
+    
+      <div class="radio-group">
+        <input type="radio" id="forecast" checked="true" #presentDay value="0" name="period" (change)="display = 0">
+        <label for="forecast">Forecast</label>
+        <input type="radio" id="past" value="1" name="period" (change)="display = 1">
+        <label for="past">Past</label>
+      </div>
 
         @if(display == 0){
           <app-energy-chart [year_displayed]="present_year" [display]="display"></app-energy-chart>
@@ -19,7 +25,7 @@
         @else{
           <ul>
             @for (year of years; track year) {
-              <li><button (click)="periodChooser(year)">{{year}}</button></li>
+              <li><button (click)="periodChooser(year)" [class]="{'active': present_year === year}">{{year}}</button></li>
             }
            </ul>
           <app-energy-chart [year_displayed]="present_year" [display]="display"></app-energy-chart>
@@ -30,4 +36,4 @@
 
       </div>
       
-     </div>
+  
