@@ -1,59 +1,105 @@
-# ECOD
+# 🌍 Renewable Energy Chart Observer (RECO)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+## 📌 Overview
 
-## Development server
+The **Renewable Energy Chart Observer (RECO)** is a web application designed to visualize the share of renewable energy in Germany's total energy production. Users can view forecasts for the current day or historical data spanning the last ten years.
 
-To start a local development server, run:
+## ✨ Features
 
-```bash
+✅ Displays **real-time renewable energy forecasts**. ✅ Shows **historical renewable energy data**. ✅ Interactive chart visualization using **Angular & Chart.js**. ✅ Dynamic selection of years for historical analysis. ✅ Fully responsive UI for seamless use on different devices.
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Angular ⚡
+- **Styling:** CSS 🎨 (Responsive Design)
+- **Charts:** Chart.js 📊
+- **API Data Source:** Energy-Charts API 🔌
+
+## 🚀 Installation
+
+To run the project locally, follow these steps:
+
+### 📋 Prerequisites
+
+- Install [Node.js](https://nodejs.org/) and npm
+- Install Angular CLI:
+  ```sh
+  npm install -g @angular/cli
+  ```
+
+### 📂 Clone the Repository
+
+```sh
+git clone https://github.com/tazokuetep24/RECO.git
+cd RECO
+```
+
+### 📦 Install Dependencies
+
+```sh
+npm install
+```
+
+### ▶️ Run the Application
+
+```sh
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Visit `http://localhost:4200/` in your browser.
 
-## Code scaffolding
+## 📁 Project Structure
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+RECO/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── app.component.ts
+│   │   │   ├── app.component.html
+│   │   │   ├── app.component.css
+│   │   │   ├── energy-chart/
+│   │   │   │   ├── energy-chart.component.ts
+│   │   │   │   ├── energy-chart.component.html
+│   │   │   │   ├── energy-chart.component.css
+│   │   ├── app.module.ts
+│   ├── assets/
+│   ├── environments/
+│   ├── index.html
+│   ├── main.ts
+│   ├── styles.css
+├── angular.json
+├── package.json
+├── README.md
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📊 Usage
 
-```bash
-ng generate --help
-```
+1. Choose between **Forecast** and **Past** data using radio buttons.
+2. If "Past" is selected, use the year selector to view historical data.
+3. View energy trends in an interactive chart.
+4. Data is sourced dynamically from the **Energy-Charts API**.
 
-## Building
+## 🤝 Contributions
 
-To build the project run:
+Contributions are welcome! Follow these steps to contribute:
 
-```bash
-ng build
-```
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m "Add new feature"`
+4. Push to your branch: `git push origin feature-name`
+5. Open a Pull Request.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📜 License
 
-## Running unit tests
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🙏 Acknowledgments
 
-```bash
-ng test
-```
+- **Energy-Charts API** for providing the renewable energy data.
+- **Angular & Chart.js** for UI and chart visualization.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+Enjoy using the **Renewable Energy Chart Observer (RECO)**! 🚀🌿
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
