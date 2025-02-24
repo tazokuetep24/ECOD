@@ -6,11 +6,16 @@ The **Renewable Energy Chart Observer (RECO)** is a web application designed to 
 
 ## ✨ Features
 
-✅ Displays **real-time renewable energy forecasts**. 
-✅ Shows **historical renewable energy data**. 
-✅ Interactive chart visualization using **Angular & Chart.js**. 
-✅ Dynamic selection of years for historical analysis. 
-✅ Fully responsive UI for seamless use on different devices.
+✅ Displays **real-time renewable energy forecasts**.  
+
+✅ Shows **historical renewable energy data**.  
+
+✅ Interactive chart visualization using **Angular & Chart.js**.  
+
+✅ Dynamic selection of years for historical analysis.  
+
+✅ Fully responsive UI for seamless use on different devices.  
+
 
 ## 🛠️ Tech Stack
 
